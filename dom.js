@@ -7,15 +7,37 @@ document.getElementById("box1").innerHTML = "Belajar Dom";
 //tapi itu ga efektif ygy
 
 let boxes = document.getElementsByClassName("boxes");
-boxes[0].innerHTML = "box1efektif";
-boxes[1].innerHTML = "box2efektif";
-boxes[2].innerHTML = "box3efektif";
+boxes[0].innerHTML = "box1";
+boxes[1].innerHTML = "box2";
+boxes[2].innerHTML = "box3";
 
 let list = document.getElementsByTagName("li");
-list[0].innerHTML = "Javascript";
-list[1].innerHTML = "Vue";
-list[2].innerHTML = "React";
+list[0].innerHTML = "Reactjs";
+list[1].innerHTML = "Reactjs1";
+list[2].innerHTML = "Reactjs2";
 
 document.getElementById("bold-me").innerHTML = " <b>BOLD ME</b> ";
 
-//Access Document using JS
+//append element
+let newEl = document.createElement("p");
+let textEl = document.createTextNode("aku adalah teks di dalam tag p");
+
+let insertEl = newEl.appendChild(textEl);
+document.getElementById("meDiv").appendChild(insertEl);
+
+//remove element
+
+let divEl = document.getElementById("thisDiv");
+let pEl = document.getElementById("mrP");
+divEl.removeChild(pEl);
+
+//set attribute
+let attr = document.querySelector("a");
+attr.setAttribute("href", "https://www.google.com");
+document.querySelector("a").removeAttribute("href");
+
+//manipulating css
+var elCss = document.getElementById("here");
+elCss.style.fontSize = "25px";
+elCss.style.color = "#38FF10";
+elCss.style.background = "#adadad";
