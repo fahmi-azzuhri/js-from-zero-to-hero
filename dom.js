@@ -1,5 +1,5 @@
 //DOM
-document.getElementById("box1").innerHTML = "Belajar Dom";
+let box1 = (document.getElementById("box1").innerHTML = "Belajar Dom");
 
 // document.getElementsByClassName("boxes")[0].innerHTML = "tes1";
 // document.getElementsByClassName("boxes")[1].innerHTML = "tes2";
@@ -41,3 +41,6 @@ var elCss = document.getElementById("here");
 elCss.style.fontSize = "25px";
 elCss.style.color = "#38FF10";
 elCss.style.background = "#adadad";
+
+let body = document.getElementsByTagName("body");
+body.style.background = "#eaeaea";
