@@ -4,5 +4,5 @@
 
 let myBtn = document.querySelector("button");
 myBtn.addEventListener("click", function () {
-  alert("yeaayyy clicked");
+  alert("udah di klik ");
 });
