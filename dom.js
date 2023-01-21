@@ -12,9 +12,10 @@ boxes[1].innerHTML = "box2";
 boxes[2].innerHTML = "box3";
 
 let list = document.getElementsByTagName("li");
-list[0].innerHTML = "Reactjs";
-list[1].innerHTML = "Reactjs1";
-list[2].innerHTML = "Reactjs2";
+for (let i = 0; i < list.length; i++) {
+  list[i].innerHTML = "react js";
+  list[i].style.color = "red";
+}
 
 document.getElementById("bold-me").innerHTML = " <b>BOLD ME</b> ";
 
